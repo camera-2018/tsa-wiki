@@ -9,10 +9,10 @@
   "main": "index.js",
   "license": "MIT",
   "devDependencies": {
-    "vitepress": "^1.0.0-alpha.4",
-    "vue": "^3.2.37"
+    "vitepress": "^1.0.0-alpha.33",
+    "vue": "^3.2.45"
   },
   "dependencies": {
-    "@algolia/client-search": "^4.14.0"
+    "@algolia/client-search": "^4.14.3"
   }
 }
