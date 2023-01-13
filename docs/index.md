@@ -26,3 +26,5 @@ hero:
       title: Simple and minimal, always
       details: Lorem ipsum...
 ---
+<!--markdownlint-disable MD033-->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6604894598567241"crossorigin="anonymous"></script>
