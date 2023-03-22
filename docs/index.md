@@ -15,14 +15,14 @@ hero:
     - theme: alt
       text: View on GitHub
       link: https://github.com/camera-2018/tsa-wiki
-  features:
-    - icon: 😍
-      title: kitakita
-      details: Lorem ipsum...
-    - icon: 🥰
-      title: Ikuyo
-      details: Lorem ipsum...
-    - icon: 😋
-      title: sukisuki
-      details: Lorem ipsum...
+features:
+  - icon: 😍
+    title: kitakita
+    details: Lorem ipsum...
+  - icon: 🥰
+    title: Ikuyo
+    details: Lorem ipsum...
+  - icon: 😋
+    title: sukisuki
+    details: Lorem ipsum...
 ---
