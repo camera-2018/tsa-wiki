@@ -1,7 +1,3 @@
----
-layout: page
----
-
 # 反代 openai api
 ### 创建
 创建一个vercel.json

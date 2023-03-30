@@ -10,6 +10,7 @@ export default {
         text: 'Guide',
         items: [
           { text: 'Getting Started', link: '/getting-started' },
+          { text: 'How To Proxypass Openai Api', link: '/how-to-proxypass-openai-api' },
           { text: 'Name', link: '/name' },
         ]
       }
