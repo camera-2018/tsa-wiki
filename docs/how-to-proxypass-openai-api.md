@@ -1,6 +1,6 @@
 # 反代 openai api
 ### 创建
-创建一个vercel.json
+创建一个文件夹 新建一个 vercel.json
 ```json
 {
   "version": 2,
@@ -13,27 +13,34 @@
 }
 ```
 
-> 可以装vercel-cli也可以不装，直接上传这个文件到vercel
+> 可以装 vercel-cli 也可以不装，也可以直接上传这个文件到 vercel
 
 
-装：
-使用npm i -g vercel以安装Vercel CLI。
+装的话：
+使用 npm i -g vercel 以安装 Vercel CLI 。
+
 `vercel login`
-`vercel -A vercel.json --prod`
-之后就上传到了vercel，然后就可以用了
 
-去vercel绑定你的域名
+`vercel -A vercel.json --prod`
+
+然后去 vercel 绑定你的域名
+
 例如
+
 `chat.typescriptactions.xyz`
 
 
-去cf解析你的域名
+去cf或者哪解析你的域名 cname 写这个中国的 vercel 负载均衡 服务器
+
 | TYPE  | NAME | CONTENT                    | PROXYSTATUS | TTL  |
 | ----- | ---- | -------------------------- | ----------- | ---- |
 | CNAME | chat | cname-china.vercel-dns.com | DNS only    | Auto |
 
+然后为了避免 cf 出现什么重定向问题 可以在左边 SSL/TLS 设置里把加密模式改为 `完全`
 
 ### 使用
+
+注意 `$OPENAI_API_KEY` 替换为你自己的 apikey
 ```bash
 curl https://chat.typescriptactions.xyz/v1/chat/completions -H "Content-Type: application/json" -H "Authorization: Bearer $OPENAI_API_KEY" -d '{"model": "gpt-3.5-turbo","messages": [{"role": "user", "content": "Hello!"}]}'
 ```
